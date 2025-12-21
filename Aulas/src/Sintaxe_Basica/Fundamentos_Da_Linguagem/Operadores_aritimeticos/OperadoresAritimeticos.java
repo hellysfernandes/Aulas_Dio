@@ -1,4 +1,4 @@
-package Fundamentos_Da_Linguagem.Operadores_aritimeticos;
+package Sintaxe_Basica.Fundamentos_Da_Linguagem.Operadores_aritimeticos;
 
 import java.util.Scanner;
 

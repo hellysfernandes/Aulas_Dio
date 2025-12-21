@@ -1,4 +1,4 @@
-package Fundamentos_Da_Linguagem.Atribuição_E_Logica;
+package Sintaxe_Basica.Fundamentos_Da_Linguagem.Atribuição_E_Logica;
 
 import java.util.Scanner;
 

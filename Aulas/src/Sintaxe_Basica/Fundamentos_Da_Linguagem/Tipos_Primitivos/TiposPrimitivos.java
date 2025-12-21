@@ -1,4 +1,4 @@
-package Fundamentos_Da_Linguagem.Tipos_Primitivos;
+package Sintaxe_Basica.Fundamentos_Da_Linguagem.Tipos_Primitivos;
 
 public class TiposPrimitivos {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Fundamentos_Da_Linguagem.Operadores_Bitwise;
+package Sintaxe_Basica.Fundamentos_Da_Linguagem.Operadores_Bitwise;
 
 public class OperadoresBitwise {
     public static void main(String[] args) {
