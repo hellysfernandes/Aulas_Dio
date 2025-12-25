@@ -1,4 +1,4 @@
-package Sintaxe_Basica.Estruturas_De_Controle.Estrutura_De_Repetição;
+package Sintaxe_Basica.Estruturas_De_Controle;
 
 import java.util.Scanner;
 

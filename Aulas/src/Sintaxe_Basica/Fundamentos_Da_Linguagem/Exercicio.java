@@ -1,4 +1,4 @@
-package Sintaxe_Basica.Fundamentos_Da_Linguagem.Exercicio;
+package Sintaxe_Basica.Fundamentos_Da_Linguagem;
 
 import java.time.OffsetDateTime;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Sintaxe_Basica.Estruturas_De_Controle.Codificação_Switch;
+package Sintaxe_Basica.Estruturas_De_Controle.Estrutura_DeCondisional;
 
 import java.util.Scanner;
 
