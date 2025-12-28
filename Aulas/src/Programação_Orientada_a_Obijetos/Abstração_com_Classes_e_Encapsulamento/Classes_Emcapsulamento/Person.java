@@ -1,4 +1,4 @@
-package Programação_Orientada_a_Obijetos.Abstração_com_Classes_e_Encapsulamento;
+package Programação_Orientada_a_Obijetos.Abstração_com_Classes_e_Encapsulamento.Classes_Emcapsulamento;
 
 public class Person {
     
