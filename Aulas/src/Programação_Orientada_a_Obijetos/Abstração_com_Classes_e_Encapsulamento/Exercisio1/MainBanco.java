@@ -27,12 +27,17 @@ public class MainBanco {
                 System.out.println(conta.getSaldo());
 
             } else if (escolha == 2) {
+                System.out.println(conta.getChequeEspecial());
 
             } else if (escolha == 3) {
                 System.out.println("difite o valor que deseja depositar");
                 float deposito = input.nextFloat();
+                conta.deposito(deposito);
 
             } else if (escolha == 4) {
+                System.out.println("digite o valor que deseja sacar");
+                float sacar = input.nextFloat();
+                conta.sacar(sacar);
 
             } else if (escolha == 5) {
 

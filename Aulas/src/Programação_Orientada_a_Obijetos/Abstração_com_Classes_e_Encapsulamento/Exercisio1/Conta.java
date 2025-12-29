@@ -22,8 +22,22 @@ public class Conta {
         return this.saldo;
     }
 
+    public float getChequeEspecial() {
+        return  this.chequeEspecial;
+    }
+
     public void deposito(float deposito) {
         this.saldo += deposito;
+    }
+
+    public void sacar(float sacar) {
+        if(sacar <= this.saldo) {
+            this.saldo -= sacar;
+        } else {
+            if(sacar <= this.chequeEspecial) {
+
+            }
+        }
     }
 
 }
