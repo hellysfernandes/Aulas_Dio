@@ -25,10 +25,8 @@ public class MainBanco {
                 break;
             } else if (escolha == 1) {
                 System.out.println(conta.getSaldo());
-
             } else if (escolha == 2) {
                 System.out.println(conta.getChequeEspecial());
-
             } else if (escolha == 3) {
                 System.out.println("difite o valor que deseja depositar");
                 float deposito = input.nextFloat();
@@ -40,9 +38,12 @@ public class MainBanco {
                 conta.sacar(sacar);
 
             } else if (escolha == 5) {
+                System.out.println("digite o valor do boleta a ser pago");
+                float valor = input.nextFloat();
+                conta.sacar(valor);
 
             } else if (escolha == 6) {
-
+                System.out.println(conta.getUsoChequeEspecial());
             } else {
                 System.out.println("fail: comando não encontrado");
             }
