@@ -26,26 +26,38 @@ public class Conta {
         return  this.chequeEspecial;
     }
 
-    public boolean getUsoChequeEspecial() {
-        if(this.usoChequeEspecial > 0){
+    public boolean estaUsandoChequeEspecial() {
+        if(usoChequeEspecial > 0){
             return true;
         }
         return false;
     }
 
     public void deposito(float deposito) {
-        this.saldo += deposito;
+        if(estaUsandoChequeEspecial()) {
+            if(deposito >= usoChequeEspecial){
+                float resto = deposito - usoChequeEspecial;
+                usoChequeEspecial = 0;
+                saldo += resto;
+            } else {
+                usoChequeEspecial -= deposito;
+            }
+        } else {
+            saldo += deposito;
+        }
     }
 
     public void sacar(float sacar) {
-        if(sacar <= this.saldo) {
-            this.saldo -= sacar;
+        float limiteDisponivel = saldo + (chequeEspecial - usoChequeEspecial);
+
+        if(sacar <= saldo) {
+            saldo -= sacar;
             System.out.printf("o valor %.2f reias foi sacado com suceso \n", sacar);
 
-        } else if(sacar <= this.chequeEspecial){
-            float resto = sacar - this.saldo;
-            this.saldo = 0;
-            this.usoChequeEspecial += resto;
+        } else if(sacar <= limiteDisponivel){
+            float resto = sacar - saldo;
+            saldo = 0;
+            usoChequeEspecial += resto + (resto * 0.2f);
             System.out.printf("o valor %.2f reias foi sacado com suceso \n", sacar);
 
         } else {

@@ -43,11 +43,13 @@ public class MainBanco {
                 conta.sacar(valor);
 
             } else if (escolha == 6) {
-                System.out.println(conta.getUsoChequeEspecial());
+                System.out.println(conta.estaUsandoChequeEspecial());
             } else {
                 System.out.println("fail: comando não encontrado");
             }
 
         }
+
+        System.out.println("Banco finalizado");
     }
 }
