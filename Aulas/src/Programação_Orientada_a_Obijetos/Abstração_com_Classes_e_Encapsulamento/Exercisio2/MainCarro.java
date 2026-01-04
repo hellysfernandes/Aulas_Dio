@@ -1,7 +1,5 @@
 package Programação_Orientada_a_Obijetos.Abstração_com_Classes_e_Encapsulamento.Exercisio2;
 
-import Sintaxe_Basica.Desafios.Carro;
-
 import java.util.Scanner;
 
 public class MainCarro {
@@ -32,7 +30,20 @@ public class MainCarro {
                 carro.aumentarVelocidade();
             } else if(escolha == 4) {
                 carro.diminuirVelocidade();
-            }else {
+            } else if(escolha == 5) {
+                carro.virar(escolha);
+            } else if(escolha == 6) {
+                carro.virar(escolha);
+            } else if(escolha == 7) {
+                System.out.println(carro.getVelocidade());
+            } else if(escolha == 8) {
+                System.out.println("escolha se quer:");
+                System.out.println("1 - aaumentar a marcha");
+                System.out.println("2 - diminuir a marcha");
+                int marcha = input.nextInt();
+                carro.trocarMarcha(marcha);
+
+            } else {
                 System.out.println("Fail: comando não encontrado");
             }
         }
