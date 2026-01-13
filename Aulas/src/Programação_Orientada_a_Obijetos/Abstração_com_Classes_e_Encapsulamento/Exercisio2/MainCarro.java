@@ -27,9 +27,9 @@ public class MainCarro {
             } else if(escolha == 2) {
                 carro.desligar();
             } else if(escolha == 3) {
-                carro.aumentarVelocidade();
+                carro.velocidade(escolha);
             } else if(escolha == 4) {
-                carro.diminuirVelocidade();
+                carro.velocidade(escolha);
             } else if(escolha == 5) {
                 carro.virar(escolha);
             } else if(escolha == 6) {
