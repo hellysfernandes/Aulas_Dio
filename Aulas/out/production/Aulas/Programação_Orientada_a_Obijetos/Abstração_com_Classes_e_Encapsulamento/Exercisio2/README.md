@@ -1,4 +1,4 @@
-# Exercício 2 — Controle de Carro (POO)
+# Exercício 2 - Controle de Carro (POO)
 
 ## 📌 Descrição 
 
