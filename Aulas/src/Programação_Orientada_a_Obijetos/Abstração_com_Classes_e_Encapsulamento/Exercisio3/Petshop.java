@@ -12,7 +12,7 @@ public class Petshop {
         this.shampoo = 0;
         this.temPet = false;
         this.petLimpo = false;
-        this. maquinaLimpa = true;
+        this.maquinaLimpa = true;
     }
 
     public int getAgua() {
@@ -36,15 +36,18 @@ public class Petshop {
     }
 
     public void colocarPet() {
-        if(getMaquinaLimpa()) {
-            if(!getTemPet()) {
-                temPet = true;
-            } else {
-                System.out.println("Fail: ja tem um pet na maquina");
-            }
-        } else {
+        if(!getPetLimpo()) {
             System.out.println("fail: a maquina esta suja");
+            return;
         }
+
+        if(getTemPet()) {
+            System.out.println("Fail: ja tem um pet na maquina");
+            return;
+        }
+
+        temPet = true;
+        petLimpo = false;
     }
 
     public void retirarPet() {
@@ -59,14 +62,22 @@ public class Petshop {
     }
 
     public void darBanho() {
-        if(!getPetLimpo()) {
-            if(agua >= 10 && shampoo >= 2) {
-                agua -= 10;
-                shampoo -= 2;
-                petLimpo = true;
-            } else {
-                System.out.println("Fail: capasidade para limpeza incapaz de completar o banho");
-            }
+        if(!getTemPet()){
+            System.out.println("Fail: nao tem nenhum pet para dar banho");
+            return;
+        }
+
+        if(getPetLimpo()) {
+            System.out.println("Fail: o pet ja esta limpo");
+            return;
+        }
+
+        if(agua >= 10 && shampoo >= 2) {
+            agua -= 10;
+            shampoo -= 2;
+            petLimpo = true;
+        } else {
+            System.out.println("Fail: capasidade para limpeza incapaz de completar o banho");
         }
     }
 
