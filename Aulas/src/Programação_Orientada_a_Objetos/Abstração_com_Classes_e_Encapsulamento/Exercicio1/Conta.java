@@ -1,7 +1,6 @@
-package Programação_Orientada_a_Obijetos.Abstração_com_Classes_e_Encapsulamento.Exercisio1;
+package Programação_Orientada_a_Objetos.Abstração_com_Classes_e_Encapsulamento.Exercicio1;
 
 public class Conta {
-
     private float saldo;
     private final float chequeEspecial;
     private float usoChequeEspecial;
@@ -27,13 +26,15 @@ public class Conta {
     }
 
     public boolean estaUsandoChequeEspecial() {
-        if(usoChequeEspecial > 0){
-            return true;
-        }
-        return false;
+        return usoChequeEspecial > 0;
     }
 
     public void deposito(float deposito) {
+        if(deposito <= 0) {
+            System.out.println("fail: valor invalido");
+            return;
+        }
+
         if(estaUsandoChequeEspecial()) {
             if(deposito >= usoChequeEspecial){
                 float resto = deposito - usoChequeEspecial;
@@ -48,6 +49,11 @@ public class Conta {
     }
 
     public void sacar(float sacar) {
+        if(sacar <= 0) {
+            System.out.println("fail: valor invalido");
+            return;
+        }
+
         float limiteDisponivel = saldo + (chequeEspecial - usoChequeEspecial);
 
         if(sacar <= saldo) {

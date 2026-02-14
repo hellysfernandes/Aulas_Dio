@@ -1,4 +1,4 @@
-package Programação_Orientada_a_Obijetos.Abstração_com_Classes_e_Encapsulamento.Exercisio1;
+package Programação_Orientada_a_Objetos.Abstração_com_Classes_e_Encapsulamento.Exercicio1;
 
 import java.util.Scanner;
 

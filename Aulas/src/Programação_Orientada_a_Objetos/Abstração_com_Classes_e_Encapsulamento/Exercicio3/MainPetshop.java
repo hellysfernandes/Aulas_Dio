@@ -1,4 +1,4 @@
-package Programação_Orientada_a_Obijetos.Abstração_com_Classes_e_Encapsulamento.Exercisio3;
+package Programação_Orientada_a_Objetos.Abstração_com_Classes_e_Encapsulamento.Exercicio3;
 
 import java.util.Scanner;
 
@@ -45,5 +45,6 @@ public class MainPetshop {
             }
 
         }
+
     }
 }

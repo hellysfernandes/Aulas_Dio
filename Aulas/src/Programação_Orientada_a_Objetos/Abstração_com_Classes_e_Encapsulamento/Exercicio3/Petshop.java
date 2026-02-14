@@ -1,4 +1,4 @@
-package Programação_Orientada_a_Obijetos.Abstração_com_Classes_e_Encapsulamento.Exercisio3;
+package Programação_Orientada_a_Objetos.Abstração_com_Classes_e_Encapsulamento.Exercicio3;
 
 public class Petshop {
     private int agua;
@@ -36,13 +36,13 @@ public class Petshop {
     }
 
     public void colocarPet() {
-        if(!getPetLimpo()) {
+        if(!getMaquinaLimpa()) {
             System.out.println("fail: a maquina esta suja");
             return;
         }
 
         if(getTemPet()) {
-            System.out.println("Fail: ja tem um pet na maquina");
+            System.out.println("fail: ja tem um pet na maquina");
             return;
         }
 
@@ -57,18 +57,18 @@ public class Petshop {
             }
             temPet = false;
         } else {
-            System.out.println("nao tem nenhum pet na maquina");
+            System.out.println("fail: nao tem nenhum pet na maquina");
         }
     }
 
     public void darBanho() {
         if(!getTemPet()){
-            System.out.println("Fail: nao tem nenhum pet para dar banho");
+            System.out.println("fail: nao tem nenhum pet para dar banho");
             return;
         }
 
         if(getPetLimpo()) {
-            System.out.println("Fail: o pet ja esta limpo");
+            System.out.println("fail: o pet ja esta limpo");
             return;
         }
 
@@ -77,15 +77,15 @@ public class Petshop {
             shampoo -= 2;
             petLimpo = true;
         } else {
-            System.out.println("Fail: capasidade para limpeza incapaz de completar o banho");
+            System.out.println("fail: capasidade para limpeza incapaz de completar o banho");
         }
     }
 
     public void verificarPet() {
         if(getTemPet()) {
-            System.out.println("tem pet na maquina");
+            System.out.println("fail: tem pet na maquina");
         } else {
-            System.out.println("nao tem pet na maquina");
+            System.out.println("fail: nao tem pet na maquina");
         }
     }
 
@@ -94,7 +94,7 @@ public class Petshop {
            agua += 2;
        } else {
            agua = 30;
-           System.out.println("limite de agua ja atingido");
+           System.out.println("fail: limite de agua ja atingido");
        }
     }
 
@@ -103,7 +103,7 @@ public class Petshop {
             shampoo += 2;
         } else {
             shampoo = 10;
-            System.out.println("limite de shampoo ja atingido");
+            System.out.println("fail: limite de shampoo ja atingido");
         }
     }
 
@@ -114,10 +114,10 @@ public class Petshop {
                 shampoo -= 1;
                 maquinaLimpa = true;
             } else {
-                System.out.println("Fail: quantidade de produto incapaz de limpar a maquina");
+                System.out.println("fail: quantidade de produto incapaz de limpar a maquina");
             }
         } else {
-            System.out.println("Fail: maquina limpa");
+            System.out.println("fail: maquina limpa");
         }
     }
 

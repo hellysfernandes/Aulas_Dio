@@ -1,4 +1,4 @@
-package Programação_Orientada_a_Obijetos.Abstração_com_Classes_e_Encapsulamento.Records;
+package Programação_Orientada_a_Objetos.Abstração_com_Classes_e_Encapsulamento.Records;
 
 public record Person(String name, int age) {
 
