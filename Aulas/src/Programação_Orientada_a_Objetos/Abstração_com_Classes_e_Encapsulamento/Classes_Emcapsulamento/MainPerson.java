@@ -8,13 +8,15 @@ public class MainPerson {
         Person male = new Person();
         male.setName("lucas");
         male.setAge(19);
+        male.incAge();
 
         Person famele = new Person();
         famele.setName("luna");
         famele.setAge(24);
+        famele.incAge();
 
-        System.out.println("male name:" + male.getName() + " age:" + male.getAge() + Person.getTest());
-        System.out.println("famele name:" + famele.getName() + " age:" + famele.getAge() + Person.getTest());
+        System.out.println("male name:" + male.getName() + " age: " + male.getAge() + Person.getTest());
+        System.out.println("famele name:" + famele.getName() + " age: " + famele.getAge() + Person.getTest());
 
     }
 }

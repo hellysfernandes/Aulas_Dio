@@ -1,9 +1,13 @@
 package Programação_Orientada_a_Objetos.Abstração_com_Classes_e_Encapsulamento.Classes_Emcapsulamento;
 
+import java.time.OffsetDateTime;
+
 public class Person {
     
     private String name;
     private int age;
+    private static String test;
+    private int lestYearAgeIon = OffsetDateTime.now().getYear();
 
     public Person() {
         this.name = "";
@@ -26,14 +30,18 @@ public class Person {
         this.age = age;
     }
 
-    private static String test;
-
     public static void setTest(String testParam) {
-        test = testParam;
+        test = testParam;  // variaveis estaticas nao sao asesadas pelo "this", por isso nao pode usar o mesmo nome
     }
 
     public static String getTest() {
         return test;
     }
 
+    public void incAge() {
+        if (this.lestYearAgeIon >= OffsetDateTime.now().getYear()) return;
+
+        this.age += 1;
+        this.lestYearAgeIon = OffsetDateTime.now().getYear();
+    }
 }
