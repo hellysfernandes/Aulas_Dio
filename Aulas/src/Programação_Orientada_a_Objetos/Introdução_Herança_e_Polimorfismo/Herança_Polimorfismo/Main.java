@@ -1,5 +1,9 @@
 package Programação_Orientada_a_Objetos.Introdução_Herança_e_Polimorfismo.Herança_Polimorfismo;
 
+import Programação_Orientada_a_Objetos.Introdução_Herança_e_Polimorfismo.Herança_Polimorfismo.Domain.Employee;
+import Programação_Orientada_a_Objetos.Introdução_Herança_e_Polimorfismo.Herança_Polimorfismo.Domain.Manager;
+import Programação_Orientada_a_Objetos.Introdução_Herança_e_Polimorfismo.Herança_Polimorfismo.Domain.Selesman;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -28,14 +32,14 @@ public class Main {
             case Manager manager -> {
                 manager.setCode("1234");
                 manager.setName("Hellys");
-                manager.setSalario(5000);
+                manager.setSalary(5000);
                 manager.setLogin("Hellys@");
                 manager.setPassoword("123");
                 manager.setCommission(1200);
 
                 System.out.println(manager.getCode());
                 System.out.println(manager.getName());
-                System.out.println(manager.getSalario());
+                System.out.println(manager.getSalary());
                 System.out.println(manager.getLogin());
                 System.out.println(manager.getPassoword());
                 System.out.println(manager.getCommission());
@@ -43,15 +47,21 @@ public class Main {
             case Selesman selesman -> {
                 selesman.setCode("123345");
                 selesman.setName("hylis");
-                selesman.setSalario(3000);
+                selesman.setSalary(3000);
                 selesman.setPorcentPeiSold(10);
+                selesman.setSoldAmount(1000);
 
                 System.out.println(selesman.getCode());
                 System.out.println(selesman.getName());
-                System.out.println(selesman.getSalario());
+                System.out.println(selesman.getSalary());
                 System.out.println(selesman.getPorcentPeiSold());
+                System.out.println(selesman.getSoldAmount());
+
             }
         }
+        System.out.println(employee.getFullSalary(500));
+        System.out.println(employee.getFullSalary());
+        System.out.println("=========");
     }
 
 }
