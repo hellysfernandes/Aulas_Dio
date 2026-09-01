@@ -1,13 +1,9 @@
-package Programação_Orientada_a_Objetos.Introdução_Herança_e_Polimorfismo.Herança_Polimorfismo;
-
-import Programação_Orientada_a_Objetos.Introdução_Herança_e_Polimorfismo.Herança_Polimorfismo.Domain.Employee;
-import Programação_Orientada_a_Objetos.Introdução_Herança_e_Polimorfismo.Herança_Polimorfismo.Domain.Manager;
-import Programação_Orientada_a_Objetos.Introdução_Herança_e_Polimorfismo.Herança_Polimorfismo.Domain.Selesman;
+package Programação_Orientada_a_Objetos.Introdução_Herança_e_Polimorfismo.Herança_Polimorfismo.Domain;
 
 public class Main {
     public static void main(String[] args) {
 
-        // Forma que da erro por conta do polimorfismo
+        // Forma que da erro por conta do polimorfismo:
 
         // Employee employee = new Employee(); qunado uma class é abistrata dela nao pode ser extansiada
         // Employee maneger = new Maneger();
